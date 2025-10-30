@@ -1,6 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.assets;
 
-public class Jewelry extends FixedAsset{
+public class Jewelry extends FixedAsset {
     private double karat;
 
     public Jewelry(String name, double value,double karat) {
@@ -19,5 +19,12 @@ public class Jewelry extends FixedAsset{
     @Override
     public double getValue(){
         return 100*karat;
+    }
+
+    @Override
+    public String toString() {
+        return "Jewelry{" +
+                "karat=" + karat +
+                '}';
     }
 }

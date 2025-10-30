@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.finance;
+
+import com.pluralsight.Interface.Valuable;
 
 public class CreditCard implements Valuable {
     private String name;
@@ -49,4 +51,12 @@ public class CreditCard implements Valuable {
         return balance;
     }
 
+    @Override
+    public String toString() {
+        return "CreditCard{" +
+                "name='" + name + '\'' +
+                ", accountNumber='" + accountNumber + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.assets;
 
 public class House extends FixedAsset {
     private int yearBuilt;
@@ -14,5 +14,14 @@ public class House extends FixedAsset {
     @Override
     public double getValue(){
         return (squareFeet * .25)+(2*bedrooms);
+    }
+
+    @Override
+    public String toString() {
+        return "House{" +
+                "yearBuilt=" + yearBuilt +
+                ", squareFeet=" + squareFeet +
+                ", bedrooms=" + bedrooms +
+                '}';
     }
 }

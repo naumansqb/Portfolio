@@ -1,6 +1,8 @@
-package com.pluralsight;
+package com.pluralsight.finance;
 
-public class BankAccount implements Valuable{
+import com.pluralsight.Interface.Valuable;
+
+public class BankAccount implements Valuable {
     private String name;
     private String accountNumber;
     private double balance;
@@ -23,5 +25,14 @@ public class BankAccount implements Valuable{
     @Override
     public double getValue() {
         return balance;
+    }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "name='" + name + '\'' +
+                ", accountNumber='" + accountNumber + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }

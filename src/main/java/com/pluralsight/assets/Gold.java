@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.assets;
 
 public class Gold extends FixedAsset {
     private double weight;
@@ -19,5 +19,12 @@ public class Gold extends FixedAsset {
     @Override
     public double getValue(){
         return weight * 100;
+    }
+
+    @Override
+    public String toString() {
+        return "Gold{" +
+                "weight=" + weight +
+                '}';
     }
 }
