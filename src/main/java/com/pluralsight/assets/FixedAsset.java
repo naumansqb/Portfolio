@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.assets;
+
+import com.pluralsight.Interface.Valuable;
 
 public abstract class FixedAsset implements Valuable {
     private String name;
@@ -6,18 +8,6 @@ public abstract class FixedAsset implements Valuable {
 
     public FixedAsset(String name, double value) {
         this.name = name;
-        this.value = value;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setValue(double value) {
         this.value = value;
     }
 
